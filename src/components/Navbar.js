@@ -8,7 +8,7 @@ const Navbar = (props) => {
   // };
   // const [darkMode, toggleMode] = useDarkMode();
 
-  const [ darkMode, toggleMode ] = useDarkMode();
+  const { darkMode, toggleMode } = props;
 
   return (
     <nav className="navbar">

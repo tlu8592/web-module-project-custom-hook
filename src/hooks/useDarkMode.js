@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-const useDarkMode = () => {
-    const [darkMode, setDarkMode] = useState(false);
+const useDarkMode = (initialBoolean) => {
+    const [darkMode, setDarkMode] = useState(initialBoolean);
 
     const toggleMode = e => {
         e.preventDefault();
