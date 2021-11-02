@@ -10,7 +10,7 @@ import "./style.css";
 const App = () => {
   const [coinData, setCoinData] = useState([]);
   // const [darkMode, setDarkMode] = useState(false);
-  const [darkMode, toggleMode] = useDarkMode(false);
+  const [darkMode, toggleMode] = useDarkMode("darkMode", false);
 
   useEffect(() => {
     axios
