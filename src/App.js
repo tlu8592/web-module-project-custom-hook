@@ -9,7 +9,6 @@ import "./style.css";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  // const [darkMode, setDarkMode] = useState(false);
   const [darkMode, toggleMode] = useDarkMode("darkMode", false);
 
   useEffect(() => {
@@ -22,7 +21,6 @@ const App = () => {
   }, []);
   return (
     <div className={darkMode ? "dark-mode App" : "App"}>
-      {/* <Navbar darkMode={darkMode} setDarkMode={setDarkMode} /> */}
       <Navbar darkMode={darkMode} toggleMode={toggleMode} />
       <Charts coinData={coinData} />
     </div>
